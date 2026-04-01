@@ -119,7 +119,7 @@ export default function TestimonialsPage() {
       : testimonials.filter((t) => t.category === activeCategory);
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-16">
+    <div className="max-w-4xl mx-auto px-6 py-16">
       {/* 통계 헤더 */}
       <div className="text-center mb-6">
         <p className="text-primary-light font-semibold text-sm mb-3 uppercase tracking-wide">
