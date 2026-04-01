@@ -248,7 +248,7 @@ export default function CoursesPage() {
   const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
 
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16">
+    <div className="site-container py-16">
       {/* 헤더 */}
       <div className="text-center mb-14">
         <p className="text-primary-light font-semibold text-sm mb-3 uppercase tracking-wide">

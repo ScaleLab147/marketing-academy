@@ -101,7 +101,7 @@ export default function HomePage() {
       {/* Hero — 센터 정렬 + 숫자 카운터 */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--color-primary)_0%,_transparent_50%)] opacity-[0.07]" />
-        <div className="max-w-3xl mx-auto px-6 py-40 md:py-52 relative text-center">
+        <div className="site-container py-40 md:py-52 relative text-center">
           <p className="text-primary-light font-semibold tracking-wide text-sm uppercase mb-8">
             한국마케팅감리협회
           </p>
@@ -147,7 +147,7 @@ export default function HomePage() {
 
       {/* 문제 공감 섹션 — 중앙 정렬 */}
       <section className="py-40 md:py-44 border-t border-dark-border">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="site-container">
           <div className="text-center mb-16">
             <p className="text-primary-light font-semibold text-sm mb-4">PROBLEM</p>
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-6 leading-tight">
@@ -177,7 +177,7 @@ export default function HomePage() {
 
       {/* 해결 프로세스 — 3단계 스텝 */}
       <section className="py-40 md:py-44 bg-dark-card/40">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="site-container">
           <div className="text-center mb-20">
             <p className="text-primary-light font-semibold text-sm mb-4">SOLUTION</p>
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-5">
@@ -223,7 +223,7 @@ export default function HomePage() {
 
       {/* 왜 한국마케팅감리협회인가 — 중앙 정렬 2x2 */}
       <section className="py-40 md:py-44">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="site-container">
           <div className="text-center mb-16">
             <p className="text-primary-light font-semibold text-sm mb-4">WHY US</p>
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary">
@@ -255,7 +255,7 @@ export default function HomePage() {
 
       {/* 수강생 성과 미리보기 — 중앙 정렬 */}
       <section className="py-40 md:py-44 bg-dark-card/40">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="site-container">
           <div className="text-center mb-16">
             <p className="text-primary-light font-semibold text-sm mb-4">RESULTS</p>
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
@@ -292,7 +292,7 @@ export default function HomePage() {
 
       {/* FAQ 섹션 — 중앙 정렬 */}
       <section className="py-40 md:py-44">
-        <div className="max-w-2xl mx-auto px-6">
+        <div className="site-container">
           <div className="text-center mb-16">
             <p className="text-primary-light font-semibold text-sm mb-4">FAQ</p>
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary">
@@ -320,7 +320,7 @@ export default function HomePage() {
 
       {/* 커뮤니티 배너 — 네이버 카페 */}
       <section className="py-20">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="site-container">
           <div className="flex flex-col items-center text-center bg-dark-card border border-dark-border rounded-2xl px-10 py-12 gap-6">
             <h3 className="text-xl font-bold text-text-primary">
               수강생 전용 커뮤니티
@@ -344,7 +344,7 @@ export default function HomePage() {
       {/* Final CTA — 강한 마감 */}
       <section className="py-40 md:py-48 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--color-primary)_0%,_transparent_50%)] opacity-[0.08]" />
-        <div className="max-w-2xl mx-auto px-6 text-center relative">
+        <div className="site-container text-center relative">
           <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-6">
             더 이상 마케팅에
             <br />
