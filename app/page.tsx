@@ -101,21 +101,21 @@ export default function HomePage() {
       {/* Hero — 센터 정렬 + 숫자 카운터 */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--color-primary)_0%,_transparent_50%)] opacity-[0.07]" />
-        <div className="max-w-5xl mx-auto px-4 py-28 md:py-36 relative text-center">
-          <p className="text-primary-light font-semibold tracking-wide text-sm uppercase mb-5">
+        <div className="max-w-5xl mx-auto px-4 py-32 md:py-44 relative text-center">
+          <p className="text-primary-light font-semibold tracking-wide text-sm uppercase mb-6">
             한국마케팅감리협회
           </p>
-          <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold text-text-primary leading-[1.2] mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold text-text-primary leading-[1.2] mb-8">
             마케팅을 배우면
             <br />
             <span className="text-primary-light">매출이 바뀝니다</span>
           </h1>
-          <p className="text-text-secondary text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-text-secondary text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
             광고비만 태우는 마케팅은 그만.
             <br />
             진짜 매출을 만드는 실전 마케팅을 가르칩니다.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-20">
             <Link
               href="/courses"
               className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:scale-[1.02]"
@@ -134,8 +134,8 @@ export default function HomePage() {
           {/* Stats Counter */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
             {stats.map((stat) => (
-              <div key={stat.label} className="bg-dark-card/60 border border-dark-border rounded-2xl py-5 px-4">
-                <p className="text-3xl md:text-4xl font-extrabold text-primary-light mb-1">
+              <div key={stat.label} className="bg-dark-card/60 border border-dark-border rounded-2xl py-6 px-4">
+                <p className="text-3xl md:text-4xl font-extrabold text-primary-light mb-2">
                   {stat.number}
                 </p>
                 <p className="text-text-muted text-sm">{stat.label}</p>
@@ -146,27 +146,27 @@ export default function HomePage() {
       </section>
 
       {/* 문제 공감 섹션 — "이런 고민 있으시죠?" */}
-      <section className="py-20 border-t border-dark-border">
+      <section className="py-28 md:py-32 border-t border-dark-border">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-primary-light font-semibold text-sm mb-3">PROBLEM</p>
-              <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-6 leading-tight">
+              <p className="text-primary-light font-semibold text-sm mb-4">PROBLEM</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-8 leading-tight">
                 혹시 이런
                 <br />
                 고민 있으신가요?
               </h2>
-              <p className="text-text-secondary text-lg">
+              <p className="text-text-secondary text-lg leading-relaxed">
                 많은 사업주, 마케터분들이 같은 문제로 고민합니다.
                 <br />
                 문제는 마케팅을 &quot;제대로&quot; 배운 적이 없기 때문입니다.
               </p>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-5">
               {problems.map((problem, i) => (
                 <div
                   key={i}
-                  className="flex items-center gap-4 bg-dark-card border border-dark-border rounded-xl px-5 py-4 group hover:border-red-500/30 transition-colors"
+                  className="flex items-center gap-4 bg-dark-card border border-dark-border rounded-xl px-6 py-5 group hover:border-red-500/30 transition-colors"
                 >
                   <span className="text-red-400 text-lg shrink-0">✕</span>
                   <span className="text-text-secondary group-hover:text-text-primary transition-colors">
@@ -180,11 +180,11 @@ export default function HomePage() {
       </section>
 
       {/* 해결 프로세스 — 3단계 스텝 */}
-      <section className="py-20 bg-dark-card/40">
+      <section className="py-28 md:py-32 bg-dark-card/40">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <p className="text-primary-light font-semibold text-sm mb-3">SOLUTION</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+          <div className="text-center mb-20">
+            <p className="text-primary-light font-semibold text-sm mb-4">SOLUTION</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-5">
               3단계로 마케팅 역량을 완성합니다
             </h2>
             <p className="text-text-secondary text-lg">
@@ -192,22 +192,22 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((step, i) => (
               <div key={step.step} className="relative">
-                <div className="bg-dark-card border border-dark-border rounded-2xl p-7 h-full hover:border-primary/40 transition-colors">
-                  <div className="flex items-center gap-3 mb-5">
+                <div className="bg-dark-card border border-dark-border rounded-2xl p-8 h-full hover:border-primary/40 transition-colors">
+                  <div className="flex items-center gap-3 mb-6">
                     <span className="text-primary-light/30 text-5xl font-black leading-none">
                       {step.step}
                     </span>
                   </div>
-                  <div className="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
-                    <step.icon size={22} className="text-primary-light" />
+                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
+                    <step.icon size={24} className="text-primary-light" />
                   </div>
-                  <h3 className="text-xl font-bold text-text-primary mb-1">
+                  <h3 className="text-xl font-bold text-text-primary mb-2">
                     {step.title}
                   </h3>
-                  <p className="text-primary-light text-sm font-medium mb-3">
+                  <p className="text-primary-light text-sm font-medium mb-4">
                     {step.subtitle}
                   </p>
                   <p className="text-text-secondary text-sm leading-relaxed">
@@ -216,7 +216,7 @@ export default function HomePage() {
                 </div>
                 {/* Arrow between cards */}
                 {i < steps.length - 1 && (
-                  <div className="hidden md:flex absolute -right-3 top-1/2 -translate-y-1/2 z-10">
+                  <div className="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10">
                     <ChevronRight size={24} className="text-dark-border" />
                   </div>
                 )}
@@ -227,25 +227,25 @@ export default function HomePage() {
       </section>
 
       {/* 왜 한국마케팅감리협회인가 — 2x2 그리드 */}
-      <section className="py-20">
+      <section className="py-28 md:py-32">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="text-center mb-14">
-            <p className="text-primary-light font-semibold text-sm mb-3">WHY US</p>
+          <div className="text-center mb-16">
+            <p className="text-primary-light font-semibold text-sm mb-4">WHY US</p>
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary">
               한국마케팅감리협회가 다른 이유
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {whyUs.map((item) => (
               <div
                 key={item.title}
-                className="flex gap-5 bg-dark-card border border-dark-border rounded-2xl p-6 hover:border-primary/30 transition-colors"
+                className="flex gap-5 bg-dark-card border border-dark-border rounded-2xl p-7 hover:border-primary/30 transition-colors"
               >
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
-                  <item.icon size={22} className="text-primary-light" />
+                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+                  <item.icon size={24} className="text-primary-light" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-text-primary mb-1.5">
+                  <h3 className="text-lg font-bold text-text-primary mb-2">
                     {item.title}
                   </h3>
                   <p className="text-text-secondary text-sm leading-relaxed">
@@ -258,12 +258,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 수강생 성과 미리보기 — 횡스크롤 느낌의 강조 배너 */}
-      <section className="py-20 bg-dark-card/40">
+      {/* 수강생 성과 미리보기 */}
+      <section className="py-28 md:py-32 bg-dark-card/40">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-10">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-14">
             <div>
-              <p className="text-primary-light font-semibold text-sm mb-3">RESULTS</p>
+              <p className="text-primary-light font-semibold text-sm mb-4">RESULTS</p>
               <h2 className="text-3xl md:text-4xl font-bold text-text-primary">
                 수강생들이 만든 진짜 결과
               </h2>
@@ -276,7 +276,7 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
               { metric: "월 매출 200%↑", who: "김O영 · 병원 마케팅", period: "3개월 만에" },
               { metric: "ROAS 350%", who: "이O수 · 자영업 대표", period: "2개월 만에" },
@@ -284,10 +284,10 @@ export default function HomePage() {
             ].map((item) => (
               <div
                 key={item.who}
-                className="bg-dark-card border border-dark-border rounded-2xl p-6 text-center hover:border-primary/30 transition-colors"
+                className="bg-dark-card border border-dark-border rounded-2xl p-8 text-center hover:border-primary/30 transition-colors"
               >
-                <p className="text-text-muted text-xs mb-2">{item.period}</p>
-                <p className="text-2xl md:text-3xl font-extrabold text-primary-light mb-3">
+                <p className="text-text-muted text-xs mb-3">{item.period}</p>
+                <p className="text-2xl md:text-3xl font-extrabold text-primary-light mb-4">
                   {item.metric}
                 </p>
                 <p className="text-text-secondary text-sm">{item.who}</p>
@@ -298,21 +298,21 @@ export default function HomePage() {
       </section>
 
       {/* FAQ 섹션 */}
-      <section className="py-20">
+      <section className="py-28 md:py-32">
         <div className="max-w-3xl mx-auto px-4">
-          <div className="text-center mb-14">
-            <p className="text-primary-light font-semibold text-sm mb-3">FAQ</p>
+          <div className="text-center mb-16">
+            <p className="text-primary-light font-semibold text-sm mb-4">FAQ</p>
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary">
               자주 묻는 질문
             </h2>
           </div>
-          <div className="space-y-4">
+          <div className="space-y-5">
             {faqs.map((faq) => (
               <div
                 key={faq.q}
-                className="bg-dark-card border border-dark-border rounded-xl p-6"
+                className="bg-dark-card border border-dark-border rounded-xl p-7"
               >
-                <h3 className="font-bold text-text-primary mb-2 flex items-start gap-2">
+                <h3 className="font-bold text-text-primary mb-3 flex items-start gap-2">
                   <span className="text-primary-light shrink-0">Q.</span>
                   {faq.q}
                 </h3>
@@ -326,11 +326,11 @@ export default function HomePage() {
       </section>
 
       {/* 커뮤니티 배너 — 네이버 카페 */}
-      <section className="py-12">
+      <section className="py-16">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between bg-dark-card border border-dark-border rounded-2xl px-8 py-8 gap-6">
+          <div className="flex flex-col md:flex-row items-center justify-between bg-dark-card border border-dark-border rounded-2xl px-10 py-10 gap-8">
             <div>
-              <h3 className="text-xl font-bold text-text-primary mb-1">
+              <h3 className="text-xl font-bold text-text-primary mb-2">
                 수강생 전용 커뮤니티
               </h3>
               <p className="text-text-secondary text-sm">
@@ -351,18 +351,18 @@ export default function HomePage() {
       </section>
 
       {/* Final CTA — 강한 마감 */}
-      <section className="py-24 relative overflow-hidden">
+      <section className="py-32 md:py-40 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--color-primary)_0%,_transparent_50%)] opacity-[0.08]" />
         <div className="max-w-3xl mx-auto px-4 text-center relative">
-          <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-6">
             더 이상 마케팅에
             <br />
             돈만 쓰지 마세요
           </h2>
-          <p className="text-text-secondary text-lg mb-3">
+          <p className="text-text-secondary text-lg mb-4">
             직접 배우면, 직접 벌 수 있습니다.
           </p>
-          <div className="flex items-center justify-center gap-2 text-text-muted text-sm mb-8">
+          <div className="flex items-center justify-center gap-2 text-text-muted text-sm mb-10">
             <CheckCircle size={16} className="text-primary-light" />
             7일 이내 환불 보장
             <span className="mx-2">·</span>
