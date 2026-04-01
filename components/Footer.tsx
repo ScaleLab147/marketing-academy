@@ -11,9 +11,10 @@ export default function Footer() {
               한국마케팅감리협회
             </h3>
             <div className="text-text-muted text-sm space-y-1.5">
+              <p>사업자명: 알리다</p>
               <p>대표: 전대현</p>
-              <p>사업자등록번호: 289-87-03256</p>
-              <p>주소: 경기도 화성시 동탄중심상가2길 26-15, 8층 802-42</p>
+              <p>사업자등록번호: 402-32-94821</p>
+              <p>주소: 종가로 406-21 울산비즈파크</p>
               <p>이메일: mybeverything@gmail.com</p>
               <p>전화: 010-5585-1275</p>
             </div>
