@@ -235,7 +235,7 @@ function DetailModal({
               <ArrowRight size={18} />
             </button>
             <p className="text-text-muted text-xs text-center mt-3">
-              7일 이내 환불 보장 · VAT 포함
+              VAT 포함
             </p>
           </div>
         </div>

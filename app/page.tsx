@@ -86,10 +86,6 @@ const faqs = [
     a: "기초반 24시간, 실전반 36시간 분량이며, 수강 기간 내 무제한 반복 시청이 가능합니다.",
   },
   {
-    q: "환불은 가능한가요?",
-    a: "수강 시작 후 7일 이내, 진도율 30% 미만인 경우 전액 환불이 가능합니다.",
-  },
-  {
     q: "대행사 운영자도 들을 수 있나요?",
     a: "물론입니다. 실전반에는 대행사 운영에 필요한 클라이언트 관리, 제안서 작성 등의 내용도 포함되어 있습니다.",
   },
@@ -351,9 +347,6 @@ export default function HomePage() {
             직접 배우면, 직접 벌 수 있습니다.
           </p>
           <div className="flex items-center justify-center gap-2 text-text-muted text-sm mb-10">
-            <CheckCircle size={16} className="text-primary-light" />
-            7일 이내 환불 보장
-            <span className="mx-2">·</span>
             <CheckCircle size={16} className="text-primary-light" />
             평생 수강 가능
           </div>
