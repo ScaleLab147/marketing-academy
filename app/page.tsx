@@ -13,10 +13,10 @@ import {
 } from "lucide-react";
 
 const stats = [
-  { number: "1,200+", label: "수강생" },
-  { number: "94%", label: "만족도" },
-  { number: "3.2배", label: "평균 매출 성장" },
-  { number: "200+", label: "성공 사례" },
+  { number: "체계적", label: "커리큘럼" },
+  { number: "실전형", label: "강의 방식" },
+  { number: "1:1", label: "맞춤 피드백" },
+  { number: "평생", label: "수강 가능" },
 ];
 
 const problems = [
@@ -246,42 +246,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ────────── RESULTS ────────── */}
-      <section className="py-[100px] bg-dark-card/40">
-        <div className="site-container">
-          <div className="text-center mb-12">
-            <p className="text-primary-light font-semibold text-sm mb-4">RESULTS</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
-              수강생들이 만든 진짜 결과
-            </h2>
-            <Link
-              href="/testimonials"
-              className="inline-flex items-center gap-1 text-text-secondary hover:text-primary-light transition-colors"
-            >
-              전체 보기 <ArrowRight size={16} />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            {[
-              { metric: "월 매출 200%↑", who: "김O영 · 병원 마케팅", period: "3개월 만에" },
-              { metric: "ROAS 350%", who: "이O수 · 자영업 대표", period: "2개월 만에" },
-              { metric: "월 수익 500만원", who: "박O진 · 프리랜서", period: "4개월 만에" },
-            ].map((item) => (
-              <div
-                key={item.who}
-                className="bg-dark-card border border-dark-border rounded-2xl p-10 text-center hover:border-primary/30 transition-colors"
-              >
-                <p className="text-text-muted text-xs mb-3">{item.period}</p>
-                <p className="text-2xl md:text-3xl font-extrabold text-primary-light mb-4">
-                  {item.metric}
-                </p>
-                <p className="text-text-secondary text-sm">{item.who}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ────────── FAQ ────────── */}
       <section className="py-[100px]">
@@ -346,10 +310,7 @@ export default function HomePage() {
           <p className="text-text-secondary text-lg mb-4">
             직접 배우면, 직접 벌 수 있습니다.
           </p>
-          <div className="flex items-center justify-center gap-2 text-text-muted text-sm mb-10">
-            <CheckCircle size={16} className="text-primary-light" />
-            평생 수강 가능
-          </div>
+          <div className="mb-10" />
           <Link
             href="/courses"
             className="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white px-10 py-4 rounded-xl font-semibold text-lg transition-all hover:scale-[1.02]"

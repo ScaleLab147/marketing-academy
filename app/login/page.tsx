@@ -71,7 +71,7 @@ export default function LoginPage() {
             {[
               {
                 icon: TrendingUp,
-                text: "수강생 평균 매출 3.2배 성장",
+                text: "실전 중심 마케팅 커리큘럼",
               },
               {
                 icon: Shield,
@@ -79,7 +79,7 @@ export default function LoginPage() {
               },
               {
                 icon: Users,
-                text: "1,200+ 수강생 커뮤니티",
+                text: "수강생 전용 커뮤니티 운영",
               },
             ].map((item) => (
               <div key={item.text} className="flex items-center gap-3">
