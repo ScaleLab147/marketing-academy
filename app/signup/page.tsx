@@ -106,7 +106,7 @@ export default function SignupPage() {
 
           <div className="space-y-6">
             {[
-              "실전 마케팅 강의 무제한 수강",
+              "실전 마케팅 강의 1년 VOD 수강",
               "1:1 맞춤 피드백 지원",
               "수강생 전용 커뮤니티 참여",
               "마케팅 템플릿 & 자료 제공",
