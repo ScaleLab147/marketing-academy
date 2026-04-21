@@ -87,8 +87,8 @@ const courses: Course[] = [
   },
   {
     id: "marketing-master",
-    title: "올인원",
-    badge: "전체 레벨",
+    title: "종합반",
+    badge: "전체 과정",
     description: "기초 + 실전 + 보너스 콘텐츠를 모두 포함한 완전 패키지.",
     price: 890000,
     originalPrice: 1580000,
@@ -335,7 +335,7 @@ export default function CoursesPage() {
                   실전반
                 </th>
                 <th className="text-center text-sm py-4 font-semibold w-1/4">
-                  <span className="text-primary-light">올인원</span>
+                  <span className="text-primary-light">종합반</span>
                 </th>
               </tr>
             </thead>
