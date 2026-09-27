@@ -7,7 +7,7 @@
 | 데이터 | 위치 | 어디서든 보이나 |
 | --- | --- | --- |
 | 웹사이트 코드 | GitHub `ScaleLab147/marketing-academy` (공개 저장소) | 예 |
-| 운영 중인 사이트 | Vercel. `main`에 합치면 자동 배포 | 예 |
+| 운영 중인 사이트 | Vercel. `main`에 합쳐도 자동으로 배포되지 않고, 마지막 배포(2026-04-30)도 직접 한 것 | 예 |
 | 회원 로그인·가입 | Supabase | 예 |
 | Claude 클라우드 대화: claude.ai/code, 휴대폰 Claude 앱의 Code 탭, 데스크톱 앱에서 Cloud로 시작한 대화 | Anthropic 서버 | 예, 같은 계정이면 모든 기기 |
 | Claude 로컬 대화: 터미널 `claude`, 데스크톱 앱에서 Local로 시작한 대화 | 각 컴퓨터의 `~/.claude/projects` | 아니요, 그 기기에만 |
@@ -97,6 +97,10 @@ git show origin/main:scripts/cloud-migrate.mjs | node --input-type=module - --ex
 ### 꼭 내 컴퓨터에서 해야 하는 작업
 
 로컬 세션에서 `/remote-control`을 실행하거나 터미널에서 `claude remote-control`을 켜면, 휴대폰이나 브라우저에서 그 세션을 이어서 조작할 수 있습니다. 그 컴퓨터가 켜져 있어야 합니다.
+
+### 사이트 배포도 클라우드에서
+
+지금은 `main`에 합쳐도 사이트가 바뀌지 않아서, 누군가 자기 컴퓨터에서 직접 배포해야 합니다. Vercel 프로젝트 Settings > Git에서 GitHub 저장소 `ScaleLab147/marketing-academy`를 연결하면 `main`에 합칠 때마다 자동으로 배포되어, 어느 기기에서 작업하든 사이트에 바로 반영됩니다. 연결한 뒤에는 `main`에 합치는 것이 곧 운영 사이트를 바꾸는 일이 되니, 합치기 전에 PR에서 한 번 확인하세요.
 
 ### 직원과 함께 쓰기
 
