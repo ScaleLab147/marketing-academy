@@ -22,11 +22,13 @@ function readEntries(transcriptPath) {
     });
 }
 
-// 사람이 직접 보낸 요청만 센다. 도구 결과, 스킬·에이전트 메시지(isMeta), 요약 메시지는 제외.
+// 사람이 직접 보낸 요청만 센다. 도구 결과, 스킬·에이전트 메시지(isMeta), 요약 메시지,
+// PR 알림·예약 확인처럼 자동으로 깨어난 차례(origin.kind가 human이 아님)는 제외.
 function isHumanPrompt(entry) {
   if (entry.type !== "user" || entry.isMeta || entry.isSidechain || entry.isCompactSummary) {
     return false;
   }
+  if (entry.origin && entry.origin.kind !== "human") return false;
   const content = entry.message?.content;
   if (typeof content === "string") return true;
   return Array.isArray(content) && !content.some((part) => part?.type === "tool_result");
